@@ -117,7 +117,7 @@ header p:first-child {
 }
 
     /* gallery */
-    #gallery > div {
+    /* #gallery > div {
         background-color: #FFD9C0;
         width: 500px;
         height: 500px;
@@ -149,7 +149,7 @@ header p:first-child {
     }
     #gallery .pic:last-child {
         grid-column: 3/6;
-    }
+    } */
     /* end gallery */
 
 :root {
@@ -193,9 +193,11 @@ footer {
 /* hover */
 .image img:hover, .button:hover {
     box-shadow: 0px 0px 10px rgb(128, 108, 108);
+    transform: scale(1.1);
 }
 .icon i:hover {
     color: #8CC0DE;
+    transform: scale(0.9);
 }
 /* end hover */
 
