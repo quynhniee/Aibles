@@ -47,6 +47,7 @@
     height: 25vh;
     background-color: var(--backgroundColor);
 }
+
 .contact {
     margin-left: 15%;
     font-size: var(--textSize);
@@ -100,7 +101,7 @@ header p:first-child {
     /* width: fit-content; */
 }
 .detail .content {
-    margin-left: 80px;
+    margin-left: 10%;
     margin-right: 40px;
     font-size: var(--textSize);
     color: var(--textColor);
@@ -180,7 +181,6 @@ footer {
     margin: auto 0px;
 }
 .icon  i {
-    border-radius: 50%;
     font-size: 30px;
     margin: 10px;
     margin-top: 50px;
@@ -194,6 +194,7 @@ footer {
 .image img:hover, .button:hover {
     box-shadow: 0px 0px 10px rgb(128, 108, 108);
     transform: scale(1.1);
+    background: #8CC0DE;
 }
 .icon i:hover {
     color: #8CC0DE;
@@ -202,13 +203,14 @@ footer {
 /* end hover */
 
 /* responsive */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
     #left {
         visibility: hidden;
     }
     #right {
         width: 100%;
     }
+    
 }
 @media screen and (max-width: 1200px) {
     :root {
@@ -223,5 +225,8 @@ footer {
     }
     header {
         height: fit-content;
+    }
+    #left div h1 {
+        font-size: 25px;
     }
 }
