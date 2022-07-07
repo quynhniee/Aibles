@@ -185,6 +185,7 @@ footer {
     margin: 10px;
     margin-top: 50px;
     object-fit: cover;
+    color: black;
 }
 /* end footer */
 
@@ -193,7 +194,9 @@ footer {
 .image img:hover, .button:hover {
     box-shadow: 0px 0px 10px rgb(128, 108, 108);
 }
-
+.icon i:hover {
+    color: #8CC0DE;
+}
 /* end hover */
 
 /* responsive */
