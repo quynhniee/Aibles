@@ -16,11 +16,12 @@
     <!-- Header -->
     <header>
         <div class="container main-menu">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Naruto_logo.svg/986px-Naruto_logo.svg.png" alt="" class="logo-image">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Naruto_logo.svg/986px-Naruto_logo.svg.png" alt="" 
+            class="logo-image">
             <nav class="nav-bar">
                 <a href="#home">home</a>
                 <a href="#about">about</a>
-                <a href="#skills">skills</a>
+                <a href="#services">services</a>
                 <a href="#portfolio">portfolio</a>
                 <a href="#blogs">blogs</a>
                 <a href="#contact">contact</a>
@@ -31,21 +32,16 @@
     <!-- Home -->
     <section id="home" class="home">
         <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <div class="col col-lg-6 col-md-6 col-sm-6">
-                    <h5>This is me</h5>
-                    <h1>Naruto</h1><br>
-                    <p class="text-muted">"Didn't wanna be a princess, I'm priceless <br>
-                        A prince not even on my list <br>
-                        Love is a drug that I quit <br>
-                        No doctor could help when I'm lovesick"</p>
-                    <figcaption class="blockquote-footer">
-                        Lyrics from <cite>Lovesick Girls</cite>
-                    </figcaption>
+            <div class="row align-items-center justify-content-between ">
+                <div class="col-12 col-lg-6 col-md-6 col-sm-12">
+                    <p>This is me</p>
+                    <h1 class="text-highlight">Naruto</h1><br>
+                    <blockquote>“The pain of being alone is completely out of this world, isn't it? I don't know why, but I understand your feelings so much, it actually hurts.”</blockquote>
+                    <figcaption class="blockquote-footer">Uzumaki Naruto</figcaption>
                 </div>
-                <div class="col col-lg-6 col-md-6 col-sm-6">
+                <div class="col-12 col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center">
                     <img src="https://dlblob.omlet.me/blob/bG9uZ2RhbjovL1RXTy9sZHByb2Qtc2cvTU84ekczVVhzaFJJYVR1LTNtdWJldz09" alt="" 
-                    class="container-img" data-tilt data-titl-scale="1.1">
+                    class="container-img">
                 </div>
             </div>
         </div>
@@ -53,34 +49,64 @@
     <!-- About -->
     <section class="about" id="about">
         <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <div class="col col-lg-7 col-md-7">
-                    <img class="container-img" src="https://i.pinimg.com/originals/8f/7b/cb/8f7bcb08088d5b67735e00d54bd51937.png" alt=""
-                    data-tilt data-titl-scale="1.1">
+            <div class="row align-items-center justify-content-between d-flex justify-content-center">
+                <div class="col-12 col-lg-7 col-md-6">
+                    <img src="https://i.pinimg.com/originals/8f/7b/cb/8f7bcb08088d5b67735e00d54bd51937.png" alt="" 
+                    class="container-img">
                 </div>
-                <div class="col col-lg-5 col-md-5">
-                    <h1>ABOUT</h1><br>
-                    <p class="text-muted"><span class="h6">Birthday: </span>October 10</p>
-                    <p class="text-muted"><span class="h6">Sex: </span>Male</p>
-                    <p class="text-muted"><span class="h6">Blood Type: </span>B</p>
-                    <p class="text-muted"><span class="h6">Clan: </span>Uzumaki Clan</p>
-                    <p class="text-muted"><span class="h6">Team: </span>7 / Team Kakashi</p>
-                    <p class="text-muted"><span class="h6">Affiliation: </span>Konoha (Hidden Leaf Village)</p>
-                    <p class="text-muted"><span class="h6">Favorite Food: </span>Ramen</p>
-                    <p class="text-muted"><span class="h6">Ninja Rank: </span>Genin, Kage</p>
-                    <p class="text-muted"><span class="h6">Occupation: </span>Hokage</p>
+                <div class="col-12 col-lg-5 col-md-6">
+                    <p>ABOUT ME</p>
+                    <h1 class="heading-highlight">personal details</h1> <br>
+                    <div class="row row-cols-2">
+                        <p class="text-highlight col col-lg-4">Birthday: </p>
+                        <p class="text-muted">October 10</p>
+                        <p class="text-highlight col col-lg-4">Gender: </p>
+                        <p class="text-muted">Male</p>
+                        <p class="text-highlight col col-lg-4">Clan: </p>
+                        <p class="text-muted">Uzumaki Clan</p>
+                        <p class="text-highlight col col-lg-4">Blood Type: </p>
+                        <p class="text-muted">B</p>
+                        <p class="text-highlight col col-lg-4">Team: </p>
+                        <p class="text-muted">7 / Team Kakashi</p>
+                        <p class="text-highlight col col-lg-4">Affiliation: </p>
+                        <p class="text-muted">Konoha</p>
+                        <p class="text-highlight col col-lg-4">Favorite Food: </p>
+                        <p class="text-muted">Ramen</p>
+                        <p class="text-highlight col col-lg-4">Ninja Rank: </p>
+                        <p class="text-muted">Genin, Kage</p>
+                        <p class="text-highlight col col-lg-4">Occupation: </p>
+                        <p class="text-muted">Hokage</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Skills -->
-    <h1></h1>
+    <!-- Services -->
+    <section class="services" id="services">
+        <div class="container">
+            <h1 class="heading-highlight text-center">my services</h1><br>
+            <div class="row g-2 g-lg-3 service-box">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
+                    <div class="services-item"></div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
+                    <div class="services-item"></div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
+                    <div class="services-item"></div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
+                    <div class="services-item"></div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
+                    <div class="services-item"></div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
+                    <div class="services-item"></div>
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="../Assets/script/vanilla-tilt.js"></script>
 </body>
 </html>
-
-<!-- (width)
-    Smartphone: <740px
-    Tablet: >= 740px and < 1024px
-    PC: >= 1024px
- -->

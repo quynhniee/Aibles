@@ -3,19 +3,39 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-    font-size: 20px;
+    font-size: var(--text-size);
     box-sizing: border-box;
+    color: var(--text);
 }
 body {
-    /* color: #777; */
+    padding-top: calc(90px * var(--scale));
     background-color: rgb(242, 242, 242);
 }
-h1, h2, h3, h4, h5 {
-    color: black;
+:root {
+    --highlight: #374483;
+    --text: #255;
+    --scale: 1;
+    --text-size: calc(20px * var(--scale));
 }
+
 .container-img {
     max-width: 100%;
     max-height: 50em;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container-img:hover {
+    transform: scale(1.1);
+}
+.heading-highlight {
+    text-transform: uppercase;
+}
+.text-highlight, .heading-highlight {
+    color: var(--highlight);
+    font-weight: 500;
+}
+blockquote {
+    max-width: 90%;
 }
 /* End Global */
 
@@ -36,15 +56,16 @@ header {
     
 }
 .logo-image {
+    box-sizing: border-box;
     object-fit: cover;
-    height: 50px;
-    margin-right: 20px;
+    height: calc(50px * var(--scale));
+    margin: 5px 20px 5px 0;
 }
 .nav-bar {
     text-transform: uppercase;
 }
 .nav-bar>a {
-    font-size: 14px;
+    font-size: calc(var(--text-size)*0.7);
     display: inline-block;
     font-weight: 500;
     padding: 25px;
@@ -57,9 +78,61 @@ header {
 /* End Header */
 
 /* Home */
-.home {
-    margin-top: 150px;
+.home, .services {
+    margin-top: 50px;
+}
+/* End Home */
+
+/* Services */
+.services-box {
+    
+}
+.services-item {
+    max-width: 100%;
+    height: 200px;
+    background-color: #255;
+}
+/* End Services */
+
+/* Responsive */
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    /* Global */
+    :root {
+        --scale: .75;
+    }
+    /* Header */
+    .nav-bar>a {
+        padding: 10px 15px;
+    }
 }
 
-
-/* End Home */
+/* Mobile */
+@media (max-width: 739px) {
+    /* Global */
+    :root {
+        --scale: .5;
+    }
+    /* Header */
+    .nav-bar>a {
+        padding: 10px 0px;
+    }
+}
+@media (max-width: 505px) {
+    /* Header */
+    .logo-image {
+        display: none;
+    }
+    .main-menu {
+        justify-content: center;
+    }
+    .nav-bar>a {
+        padding: 15px 7px;
+    }
+}
+/* 
+    Smartphone: <740px
+    Tablet: >= 740px and < 1024px
+    PC: >= 1024px 
+*/
