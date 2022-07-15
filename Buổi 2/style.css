@@ -5,6 +5,7 @@
     text-decoration: none;
     font-size: var(--text-size);
     box-sizing: border-box;
+    color: black;
 }
 body {
     background-color: rgb(242, 242, 242);
@@ -117,7 +118,6 @@ form {
 }
 .footer-content {
     padding: 30px 0;
-    height: 200px;
     background-color: white;
     text-align: center;
 }
@@ -125,13 +125,20 @@ form {
     color: white;
     background-color: var(--main-color);
     text-align: center;
-    padding: 30px 0;
+    padding: calc(var(--text-size)*1.5) 0;
 }
 .footer-icon {
     display: flex;
     justify-content: center;
 }
-
+.footer-icon i {
+    font-size: calc(var(--text-size)*1.5);
+    margin: 0 10px;
+}
+.footer-icon i:hover {
+    color: var(--main-color);
+    transform: scale(0.9);
+}
 /* End Social */
 
     /* Responsive */
