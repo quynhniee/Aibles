@@ -29,6 +29,7 @@ section {
 .container-img {
     width: 100%;
     max-width: 200%;
+    height: 100%;
     max-height: 200%;
     object-fit: cover;
 }
@@ -117,16 +118,17 @@ form {
     background-color: white;
     text-align: center;
 }
-footer {
-    padding: 30px 0;
+.footer-bottom {
     color: white;
     background-color: var(--main-color);
     text-align: center;
+    padding: 30px 0;
 }
 .footer-icon {
     display: flex;
     justify-content: center;
 }
+
 /* End Social */
 
     /* Responsive */
