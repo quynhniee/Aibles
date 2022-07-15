@@ -37,6 +37,7 @@ section {
     height: 300px;
     box-sizing: border-box;
     border: 10px solid white;
+    border-radius: 10px;
     /* background-color: white; */
     background-color: rgb(228, 228, 228);
     overflow: hidden;
@@ -58,12 +59,14 @@ blockquote {
 
 /* Header */
 header {
+    z-index: 1;
     background-color: white;
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     right: 0;
     display: block;
+    box-shadow: 0 3px 6px rgba(170, 170, 170, 0.171);
 }
 .main-menu {
     display: flex;
