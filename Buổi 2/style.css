@@ -176,6 +176,9 @@ form {
     .nav-bar>a {
         padding: 10px 0px;
     }
+    .hide-img {
+        display: none;
+    }
 }
 @media (max-width: 505px) {
     /* Header */
