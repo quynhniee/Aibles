@@ -76,8 +76,8 @@ h1 {
 }
 .form--line--label {
     display: flex;
-    font-weight: 500;
     align-items: center;
+    font-size: 1.2rem;
 }
 input, .btn, .form--img {
     width: 100%;
@@ -85,6 +85,9 @@ input, .btn, .form--img {
     border: var(--main-color) 2px solid;
     border-radius: 50px;
     margin-top: 15px;
+}
+input::placeholder {
+    color: var(--main-color);
 }
 input[type="radio"] {
     width: 30px;
@@ -94,13 +97,13 @@ input[type="radio"] {
     accent-color: var(--main-color);
 }
 .form--line--text {
-    font-size: .8rem;
+    font-size: .9rem;
 }
 .btn {
     background-color: var(--main-color);
     color: white;
 }
-.btn:hover, .form--img:hover, .link-text:hover {
+.btn:hover, .form--img:hover, .link-text:hover, input::placeholder {
     opacity: 0.7;
 }
 .text--liner {
