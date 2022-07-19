@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toast Messenge</title>
+    <style>
+      body {
+        background-color: lightgray;
+      }
+      .gray-text {
+        color: darkgray;
+      }
+      .rounded {
+        border-radius: 5px;
+      }
+      .toast {
+        display: inline-block;
+        background-color: white;
+        padding: 15px;
+        min-width: 450px;
+      }
+      .toast-header-title {
+        display: flex;
+        flex: auto auto;
+      }
+      .toast-header-img {
+        width: 100px;
+        height: 100px;
+        background-color: violet;
+        margin-right: 20px;
+      }
+      .toast-header-content{
+        border-bottom: 2px solid lightgray;
+        display: flex;
+        flex: 1fr 1fr 1fr;
+        justify-content: space-between;
+      }
+      .title {
+        text-transform: uppercase;
+        color: blue;
+      }
+      .btn {
+        display: inline;
+        padding: 5px;
+        background-color: rgb(236, 236, 236);
+      }
+      .toast-header-content {
+        display: flex;
+        flex: 1fr 1fr 1fr;
+      }
+      .toast-body {
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="toast-container">
+      <div class="toast rounded">
+        <div class="toast-header">
+          <div class="toast-header-title">
+            <img src="..." class="toast-header-img rounded" alt="..." />
+            <div class="">
+              <strong class="title"> Bao hiem thiet bi di dong</strong>
+              <p>Bao hiem thiet bi di dong</p>
+              <div class="btn gray-text rounded">Dang xu ly</div>
+            </div>
+          </div>
+          <div class="toast-header-content">
+            <div class="hieu-luc">
+              <p class="gray-text">Hieu luc</p>
+              <p>18/07/2023</p>
+            </div>
+            <div class="thiet-bi">
+              <p class="gray-text">Thiet bi</p>
+              <p>Iphone 12 pro</p>
+            </div>
+            <div class="chu-so-huu">
+              <p class="gray-text">Chu so huu</p>
+              <p>Hoang Tuan Hiep</p>
+            </div>
+          </div>
+        </div>
+        <div class="toast-body gray-text">Hop dong cua ban dang duoc xu ly</div>
+      </div>
+    </div>
+  </body>
+</html>

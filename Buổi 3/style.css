@@ -1,0 +1,141 @@
+/* Global */
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #444b59;
+    line-height: 30px;
+    font-size: calc(var(--font-size) * var(--scale));
+}
+.container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+:root {
+    --main-color: #718be1;
+    --font-size: 13px;
+    --scale: 1;
+}
+img {
+    max-width: 90%;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 50px;
+}
+.space-between {
+    display: flex;
+    justify-content: space-between;
+}
+.space-around {
+    display: flex;
+    justify-content: space-around;
+}
+.align-center {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+/* End Global */
+
+/* Header */
+.nav-bar {
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+}
+.nav-bar>a {
+    padding: 40px calc(var(--font-size) * var(--scale)* var(--scale)) 20px;
+}
+.nav-bar>a:hover, a>i:hover {
+    color: var(--main-color);
+}
+/* End Header */
+
+/* Form */
+h1 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+.link-text {
+    color: var(--main-color);
+    font-weight: 600;
+}
+.form--line, .btn, .text--liner {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.form--line--label {
+    display: flex;
+    font-weight: 500;
+    align-items: center;
+}
+input, .btn, .form--img {
+    width: 100%;
+    padding: 10px 20px;
+    border: var(--main-color) 2px solid;
+    border-radius: 50px;
+    margin-top: 15px;
+}
+input[type="radio"] {
+    width: 30px;
+    height: 30px;
+    margin-top: 0;
+    margin-right: 10px;
+    accent-color: var(--main-color);
+}
+.form--line--text {
+    font-size: .8rem;
+}
+.btn {
+    background-color: var(--main-color);
+    color: white;
+}
+.btn:hover, .form--img:hover, .link-text:hover {
+    opacity: 0.7;
+}
+.text--liner {
+    flex-direction: row;
+    display: flex;
+}
+.text--liner:before, .text--liner:after{
+    content: "";
+    flex: 1 1;
+    border-bottom: 2px solid var(--main-color);
+    margin: auto 5px;
+}
+.form--img {
+    object-fit: cover;
+    max-width: 80px;
+    border-radius: 10px;
+}
+/* End Form */
+
+/* Responsive */
+@media (min-width: 740px) {
+    :root {
+        --scale: 1.2;
+    }
+}
+@media (min-width: 1024px) {
+    .col-lg-5 {
+        flex: 0 0 41.6666%;
+        max-width: 41.6666%;
+    }
+    .col-lg-7 {
+        flex: 0 0 58.3333%;
+        max-width: 58.3333%;
+    }
+    :root {
+        --scale: 1.5;
+    }
+}
+
