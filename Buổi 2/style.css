@@ -43,15 +43,14 @@ section {
     box-sizing: border-box;
     border: 10px solid white;
     border-radius: 10px;
-    /* background-color: white; */
     background-color: rgb(228, 228, 228);
     overflow: hidden;
-}
-.container-item:hover {
-    box-shadow: 0 10px 10px lightgray;
+    box-shadow: 0 3px 6px rgba(170, 170, 170, 0.171);
+    position: relative;
 }
 .heading-highlight {
     text-transform: uppercase;
+    font-weight: 500;
 }
 .text-highlight {
     color: var(--main-color);
@@ -88,7 +87,7 @@ header {
     text-transform: uppercase;
 }
 .nav-bar>a {
-    font-size: calc(var(--text-size)*0.7);
+    font-size: calc(var(--text-size)*0.8);
     display: inline-block;
     font-weight: 500;
     padding: 20px 25px;
@@ -97,8 +96,33 @@ header {
 .nav-bar>a:hover {
     background-color: rgba(158, 158, 158, 0.153);
     color: var(--main-color);
+    font-weight: 800;
 }
 /* End Header */
+
+/* Blogs */
+.slide-left {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    transition: .5s ease;
+    height: 0;
+}
+.container-item:hover .slide-left {
+    height: 100%;
+}
+.slide-text {
+    position: absolute;
+    top: 50%;
+    color: white;
+    text-transform: uppercase;
+    font-size: calc(var(--text-size)*.7);
+}
+/* End blogs */
 
 /* Contact */
 form {
@@ -112,6 +136,8 @@ form {
 }
 .btn {
     background-color: var(--main-color);
+    color: white;
+    border-radius: 5px;
 }
 /* End Contact */
 
@@ -145,7 +171,6 @@ form {
 /* End Social */
 
     /* Responsive */
-
 /* Tablet */
 @media (min-width: 740px) and (max-width: 1023px) {
     /* Global */
@@ -175,7 +200,7 @@ form {
     }
     /* Header */
     .nav-bar>a {
-        padding: 10px 0px;
+        padding: 10px 10px;
     }
     .hide-img {
         display: none;
