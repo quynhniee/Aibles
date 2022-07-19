@@ -7,6 +7,7 @@
     color: #444b59;
     line-height: 30px;
     font-size: calc(var(--font-size) * var(--scale));
+    font-family: 'Nunito', sans-serif;
 }
 .container {
     width: 90%;
@@ -47,15 +48,15 @@ img {
 /* End Global */
 
 /* Header */
-.nav-bar {
+.navbar {
     display: flex;
     justify-content: flex-end;
     align-content: center;
 }
-.nav-bar>a {
+.navbar>a {
     padding: 40px calc(var(--font-size) * var(--scale)* var(--scale)) 20px;
 }
-.nav-bar>a:hover, a>i:hover {
+.navbar>a:hover, a>i:hover {
     color: var(--main-color);
 }
 /* End Header */
