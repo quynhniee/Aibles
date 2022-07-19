@@ -70,11 +70,11 @@ h1 {
     color: var(--main-color);
     font-weight: 600;
 }
-.form--line, .btn, .text--liner {
+.form__line, .btn, .text--liner {
     padding-top: 20px;
     padding-bottom: 20px;
 }
-.form--line--label {
+.form__line--label {
     display: flex;
     align-items: center;
     font-size: 1.2rem;
@@ -96,7 +96,7 @@ input[type="radio"] {
     margin-right: 10px;
     accent-color: var(--main-color);
 }
-.form--line--text {
+.form__line--text {
     font-size: .9rem;
 }
 .btn {
@@ -107,8 +107,8 @@ input[type="radio"] {
     opacity: 0.7;
 }
 .text--liner {
-    flex-direction: row;
     display: flex;
+    flex-direction: row;
 }
 .text--liner:before, .text--liner:after{
     content: "";
