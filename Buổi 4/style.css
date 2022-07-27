@@ -75,7 +75,7 @@ header {
     line-height: 10px;
     transition: 0.3s ease;
 }
-.nav__icon:hover i, .nav__item>a:hover {
+.nav__icon:hover i, .nav__item>a:hover, i:hover {
     color: var(--primary);
 }
 
@@ -144,7 +144,6 @@ footer {
         top: 50px;
         right: -150%;
         width: 100%;
-        display: flex;
         flex-direction: column;
         padding-left: 30%;
         transition: 0.5s ease-in;
