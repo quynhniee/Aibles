@@ -75,7 +75,8 @@ header {
     line-height: 10px;
     transition: 0.3s ease;
 }
-.nav__icon:hover i, .nav__item>a:hover, i:hover {
+.nav__icon:hover i, 
+.nav__item>a:hover, i:hover {
     color: var(--primary);
 }
 
