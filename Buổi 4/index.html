@@ -7,10 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- Boostrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
 </head>
@@ -19,9 +20,9 @@
     <!-- Header -->
     <header>
         <div class="nav__icon">
-            <i class="fa-solid fa-minus"></i>
-            <i class="fa-solid fa-minus"></i>
-            <i class="fa-solid fa-minus"></i>
+            <i class="fa-solid fa-minus display-3"></i>
+            <i class="fa-solid fa-minus display-3"></i>
+            <i class="fa-solid fa-minus display-3"></i>
         </div>
         <ul class="nav__menu">
             <li class="nav__item"><a href="#" class="nav__link">Works</a></li>
@@ -31,22 +32,22 @@
     </header>
     <!-- Introduction -->
     <section>
-        <div class="container">
-            <div class="row row--first">
-                <div class="col-12 col-md-7 col-lg-7 me-auto">
-                    <div class="content">
-                        <h1 class="content__heading">Hi, I am John, Creative Technologist</h1>
-                        <p class="content__text ">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+        <div class="container mt-5">
+            <div class="row g-0 flex-lg-row-reverse text-center text-lg-start mb-4">
+                <div class="col-12 col-lg-4 d-flex align-items-center justify-content-center">
+                    <img src="https://s3-alpha-sig.figma.com/img/c316/adc4/65a80990af3a0075303343f0d615c92a?Expires=1659916800&Signature=ENzYfCOfhSMaM10JFbz72ICIuOyjIw7LyUJHKYDI1Q4~HO76fk3hIeHRx4ROV5QfMwyqHp8KOaxgsOs5e0FInnFpGCNl1rgqmT9fiVQEEhTZsiTab~3BHjviP6A9odp~MNLmLFKCsJiMPQZaqSwmPPXV4bJwBiTyx9EHosHhyhkkJxOBRpzgFi2llf5S4~mfSa11TXSldSccfObwTbJj30bPqtX7YV1ooXKRtB0A7-affWoR1JsxwHYGrKj48Sb6ugmpwvGYawn2enKTKJ6rhiPfebBW5l6zC5hyi2yMTVQsRqwLr46SDiYqYGK7DTeSKNzc60LG3I9GT3A8Nfj51w__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+                        alt="" class="prof__img p-3 p-lg-0">
+                </div>
+                <div class="col-12 col-lg-7 me-auto">
+                    <div class="content px-3">
+                        <h1 class="fw-bold mt-3 mt-lg-5 ">Hi, I am John, Creative Technologist</h1>
+                        <p" class="mb-0">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
                             sint.
                             Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
                             amet.
-                        </p>
-                        <button>Download Resume</button>
+                            </p>
+                            <button>Download Resume</button>
                     </div>
-                </div>
-                <div class="col-12 col-md-4 col-lg-4 d-flex align-items-center justify-content-center">
-                    <img src="https://s3-alpha-sig.figma.com/img/c316/adc4/65a80990af3a0075303343f0d615c92a?Expires=1659916800&Signature=ENzYfCOfhSMaM10JFbz72ICIuOyjIw7LyUJHKYDI1Q4~HO76fk3hIeHRx4ROV5QfMwyqHp8KOaxgsOs5e0FInnFpGCNl1rgqmT9fiVQEEhTZsiTab~3BHjviP6A9odp~MNLmLFKCsJiMPQZaqSwmPPXV4bJwBiTyx9EHosHhyhkkJxOBRpzgFi2llf5S4~mfSa11TXSldSccfObwTbJj30bPqtX7YV1ooXKRtB0A7-affWoR1JsxwHYGrKj48Sb6ugmpwvGYawn2enKTKJ6rhiPfebBW5l6zC5hyi2yMTVQsRqwLr46SDiYqYGK7DTeSKNzc60LG3I9GT3A8Nfj51w__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
-                        alt="" class="prof__img">
                 </div>
             </div>
         </div>
@@ -54,22 +55,22 @@
     <!-- Recent posts -->
     <section class="section--highlighted">
         <div class="container">
-            <p class="title">Recent posts</p>
+            <p class="lead fw-normal text-center text-lg-start mb-4">Recent posts</p>
             <div class="row g-3">
                 <div class="col col-12 col-lg-6">
-                    <div class="content content content--shadow">
-                        <div class="content__heading">Making a design system from scratch</div>
-                        <div>12 Feb 2020 &nbsp; &#124; &nbsp; Design, Pattern</div>
-                        <div class="content__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+                    <div class="content bg-white rounded-2 content--shadow">
+                        <div class="h3 fw-bold">Making a design system from scratch</div>
+                        <div class="fs-5">12 Feb 2020 &nbsp; &#124; &nbsp; Design, Pattern</div>
+                        <div class="mb-0">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
                             sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt
                             nostrud amet.</div>
                     </div>
                 </div>
                 <div class="col col-12 col-lg-6">
-                    <div class="content content content--shadow">
-                        <div class="content__heading">Creating pixel perfect icons in Figma</div>
-                        <div>12 Feb 2020 &nbsp; &#124; &nbsp; Figma, Icon Design</div>
-                        <div class="content__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+                    <div class="content bg-white rounded-2 content--shadow">
+                        <div class="h3 fw-bold">Creating pixel perfect icons in Figma</div>
+                        <div class="fs-5">12 Feb 2020 &nbsp; &#124; &nbsp; Figma, Icon Design</div>
+                        <div class="mb-0">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
                             sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt
                             nostrud amet.</div>
                     </div>
@@ -80,20 +81,20 @@
     <!-- Featured works -->
     <section>
         <div class="container">
-            <p class="title">Featured works</p>
+            <p class="lead fw-normal text-center text-lg-start mb-4">Featured works</p>
             <div class="row g-0 gy-3">
-                <div class="col-12 col-lg-3 d-flex justify-content-center">
+                <div class="col-12 col-lg-4 d-flex justify-content-center">
                     <img src="https://s3-alpha-sig.figma.com/img/1c6b/bc0b/e719e9d93c02a87ba51308ebb0297cdf?Expires=1659916800&Signature=hERptxgJEtNGh-UCFm5ZvROh-I1Qt-3rODLR~K0DpFHV1bwrHNKnjELY-aIeige0Qj0Pa4pGNW5WxxlBEh09XCpy3~rDFMe-WYvRCkHlhJTmXZYPQ8XRHqEhvixHQhfsCDpxSnxHFxY8BssaTsuIZVO~deqNgLa7JRDV2dYYMHTl-GOakCvmPPESi~AH8sf1e6Zz6kLmENspB7UL5ZAg2uQK7xgbvo78GUpmuriBlk2cn78j2RfofRn6p0kHtj63lQcWczuP1oMt4Beca5hZ31ndnh2i8K7yHVWVtFdVRG~Vml0Csw~sBRH2a76CGmadxMzKjhjtwJ-Zzmq0vp4sQg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
-                        class="content__img" alt="">
+                        class="content__img rounded-2" alt="">
                 </div>
-                <div class="col-12 col-lg-9">
-                    <div class="content ps-lg-3">
-                        <div class="content__heading">Designing Dashboards</div>
+                <div class="col-12 col-lg-8">
+                    <div class="content rounded-2 ps-lg-3">
+                        <div class="h3 fw-bold">Designing Dashboards</div>
                         <div>
-                            <button class="btn--dark">2020</button>
-                            <span class="text-muted">Dashboard</span>
+                            <button class="btn--dark me-4 fs-5">2020</button>
+                            <span class="text-secondary fs-5">Dashboard</span>
                         </div>
-                        <div class="content__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+                        <div class="mb-0">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
                             sint.
                             Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
                             amet.
@@ -101,36 +102,36 @@
                     </div>
                 </div>
                 <div class="underline"></div>
-                <div class="col-12 col-lg-3 d-flex justify-content-center">
+                <div class="col-12 col-lg-4 d-flex justify-content-center">
                     <img src="https://s3-alpha-sig.figma.com/img/44dc/7799/6f359e2db24fc4e08bfd61cf50427139?Expires=1659916800&Signature=SUBvSvYIGuFyoZIjQ8nt-kAZnJiCPgquiqiuAD8RdKF9VH7npspEuqgqbJsjWHGg37lTvYPRIANXED1ATJbbrkYgB-jP0U3SWgTJLYQ66QGrT42K5QbUNteWtjBFUG9VMXVORyFMKBRJkKdAHrVfsu3jcVjh8u8wlj~hhfmsfFEB87D3aCn-XlcB6oiSn5UaPeHMTIXa4EZqJMZd4hKqvp~rzMLI40duhgqKzDYt4vpdgT-Qubhq1MMuwHdEn3SOniqcX8CRKm2Y-GOBEP4kWTE~0aV4LeuhSMk~H~o3OMp4sKqvLQ6pO0nFNCh4lwi94~9Zx9jB3l3npiXEGYp2UQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
-                        class="content__img" alt="">
+                        class="content__img rounded-2" alt="">
                 </div>
-                <div class="col-12 col-lg-9">
-                    <div class="content ps-lg-3">
-                        <div class="content__heading">Vibrant Portraits of 2020</div>
+                <div class="col-12 col-lg-8">
+                    <div class="content rounded-2 ps-lg-3">
+                        <div class="h3 fw-bold">Vibrant Portraits of 2020</div>
                         <div>
-                            <button class="btn--dark">2018</button>
-                            <span class="text-muted">Illustration</span>
+                            <button class="btn--dark me-4 fs-5">2018</button>
+                            <span class="text-secondary fs-5">Illustration</span>
                         </div>
-                        <div class="content__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+                        <div class="mb-0">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
                             sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt
                             nostrud amet.
                         </div>
                     </div>
                 </div>
                 <div class="underline"></div>
-                <div class="col-12 col-lg-3 d-flex justify-content-center">
+                <div class="col-12 col-lg-4 d-flex justify-content-center">
                     <img src="https://s3-alpha-sig.figma.com/img/a511/7cdc/a561b38768fbe6667854fc00641b25fb?Expires=1659916800&Signature=T~i-Q9ieAUTmlyfUrKFPQApERYc-955wcph-vi9C25QNK0mwhdd2fqgD3DbkRIBshLwkBVVR7f33J6wDs5sUMjdt0tJK-eI4nZ549K6fuLdUQqz4TMu24ZtKavj-9MLRFsMZ08XrF-Z2VRxbHK9GcWRbYyPM-JOOmSo0vPnaEQsLiHIRhp-0OiixhHUMQ~nLySvGjPbIQswJICVsCcYEV4PB2xocnvyEyfoUikJOeBEwafW1yN6u7FkN5WiHkUimbv4Rh-yUXLf9tjUQjZIFr1XHBDvkNma-WmLr7mqw3EYULprpHq9fduCrTSEMLF1LypjwzZ7NwW9ByETlDR7B5w__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
-                        class="content__img" alt="">
+                        class="content__img rounded-2" alt="">
                 </div>
-                <div class="col-12 col-lg-9">
-                    <div class="content ps-lg-3">
-                        <div class="content__heading">36 Days of Malayalam type</div>
+                <div class="col-12 col-lg-8">
+                    <div class="content rounded-2 ps-lg-3">
+                        <div class="h3 fw-bold">36 Days of Malayalam type</div>
                         <div>
-                            <button class="btn--dark">2018</button>
-                            <span class="text-muted">Typography</span>
+                            <button class="btn--dark me-4 fs-5">2018</button>
+                            <span class="text-secondary fs-5">Typography</span>
                         </div>
-                        <div class="content__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+                        <div class="mb-0">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
                             sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt
                             nostrud amet.
                         </div>
@@ -141,14 +142,14 @@
         </div>
     </section>
     <!-- Footer -->
-    <footer>
+    <footer class="text-center pt-5">
         <div>
-            <i class="fa-brands fa-square-facebook"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-linkedin"></i>
+            <i class="display-5 mx-3 fa-brands fa-square-facebook"></i>
+            <i class="display-5 mx-3 fa-brands fa-instagram"></i>
+            <i class="display-5 mx-3 fa-brands fa-twitter"></i>
+            <i class="display-5 mx-3 fa-brands fa-linkedin"></i>
         </div>
-        <p class="content__text">Copyright ©2020 All rights reserved </p>
+        <p class="my-4 my-lg-5">Copyright ©2020 All rights reserved </p>
     </footer>
     <script src="script.js"></script>
 </body>
